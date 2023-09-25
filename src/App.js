@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from "./Pages/Home";
 import Campgrounds from "./Pages/Campgrounds";
@@ -7,12 +7,14 @@ import Campgrounds from "./Pages/Campgrounds";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
-          <Route path="/" exact component={Home} />
-          <Route path="/campgrounds" component={Campgrounds} /> 
+        <Routes>
+          <Route path='/' exact component={Home} />
+          <Route path='/campgrounds' component={Campgrounds} /> 
+        </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
 
   );
 }
