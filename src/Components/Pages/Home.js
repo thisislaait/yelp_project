@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
-import Hero from "./Components/desktop/Hero";
-import MobileHero from "./Components/mobileview/mHero";
+import Hero from "../desktop/Hero";
+import MobileHero from "../mobileview/mHero";
 
 
 const Home = () => {
