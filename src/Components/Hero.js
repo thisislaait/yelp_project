@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../Assets/logo.svg';
 import herobg from '../Assets/Hero Image.jpg';
 import Partners from '../Components/Partners';
+import Features from '../Components/Features';
 
 const Hero = () => {
   return (
@@ -14,17 +15,7 @@ const Hero = () => {
             </a>
             <h1 className="text-5xl font-bold pt-14 pb-5">Explore the best <br /> camps on Earth.</h1>
             <p className="text-lg leading-7 pr-14 pb-2.5 text-gray-600">YelpCamp is a curated list of the best camping spots on Earth, Unfiltered and unbiased reviews.</p>
-            <ul className="list-none">
-              <li className="text-base flex items-center text-gray-900 pb-1 pt-1.5">
-                <i className="material-icons text-base mr-2 text-green-500" style={{ fontSize: '1.3rem', color: 'rgb(9, 118, 111)' }}>check_circle</i><span>Add your own camp suggestions.</span>
-              </li>
-              <li className="text-base flex items-center text-gray-900 pb-1">
-                <i className="material-icons text-xs mr-2 text-green-500" style={{ fontSize: '1.3rem', color: 'rgb(9, 118, 111)' }}>check_circle</i><span>Leave reviews and experiences.</span>
-              </li>
-              <li className="text-base flex items-center text-gray-900 pb-1">
-                <i className="material-icons text-xs mr-2" style={{ fontSize: '1.3rem', color: 'rgb(9, 118, 111)' }}>check_circle</i><span>See locations for all camps.</span>
-              </li>
-            </ul>
+            <Features />
             <button className="my-5 p-2.5 bg-black text-base text-white rounded font-medium">
               <a href="campgrounds.html">View Campgrounds</a>
             </button>
