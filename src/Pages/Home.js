@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from "../desktop/Hero";
-import MobileHero from "../mobileview/mHero";
+import Hero from "../Components/desktop/Hero";
+import MobileHero from "../Components/mobileview/mHero";
 
 
 const Home = () => {
