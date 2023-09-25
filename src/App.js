@@ -1,15 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Hero from "./Components/desktop/Hero";
-import MobileHero from "./Components/mobileview/mHero";
+import Home from "./Components/Pages/Home";
+import campgrounds from "./Components/Pages/Campgrounds";
 
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-      <MobileHero />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/campgrounds" Component={campgrounds} />
+        </Switch>
+      </div>
+    </Router>
+    
   );
 }
 
