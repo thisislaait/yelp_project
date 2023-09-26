@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from "../Components/Nav";
 import Banner from "../Components/Banner";
 import campgroundData from "../Data/campgroundData";
+import CampgroundCard from "../Data/CampgroundCard";
 
 const Campgrounds = () => {
   return (
